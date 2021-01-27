@@ -1977,7 +1977,7 @@ void run_detector(int argc, char **argv)
     int save_labels = find_arg(argc, argv, "-save_labels");
     char* chart_path = find_char_arg(argc, argv, "-chart", 0);
     if (argc < 4) {
-        fprintf(stderr, "usage: %s %s [train/test/valid/demo/map] [data] [cfg] [weights (optional)]\n", argv[0], argv[1]);
+        fprintf(stderr, "usage: %s %s [train/test/valid/demo/map] [data] [cfg] [weights (optional)]\n", argv[0], argv[1], argv[2]);
         return;
     }
     char *gpu_list = find_char_arg(argc, argv, "-gpus", 0);
